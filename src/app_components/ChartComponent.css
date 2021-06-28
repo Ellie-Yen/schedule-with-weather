@@ -1,0 +1,27 @@
+.chart {
+  grid-template: 1fr/1fr;
+  background: var(--maincolor2);
+}
+.chart * {font-size: var(--fontsize_small); text-align: center;}
+.xaxis, .chart_body {grid-area: 1/1/1/1;}
+.chart_body {padding: var(--fontsize_normal) 0;}
+.xcord {grid-template: var(--fontsize_small) 1fr/1fr;}
+.label {
+  position: relative;
+  grid-area: 2/1/2/1;
+  filter: opacity(0);
+  transform: translateY(var(--fontsize_normal));
+  height: fit-content;
+}
+.line_group {
+  transform-origin: center;
+  filter: drop-shadow(1px 1px 2px var(--shadowcolor)) brightness(1.2);
+}
+.line_marker {
+  fill: var(--bgcolor);
+  stroke: var(--bgcolor);
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+.xcord:hover {background: var(--maincolor1);}
+.xcord:hover > .label {filter: opacity(1);}

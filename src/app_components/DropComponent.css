@@ -1,0 +1,13 @@
+.drop_content {
+  background: var(--bgcolor);
+  width: 80%;
+}
+.sidebar {
+  width: fit-content;
+  overflow-y: auto;
+  background: var(--assistcolor);
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  padding: var(--iconsize) var(--gap3);
+}
+.sidebar_title { background: var(--maincolor3);}

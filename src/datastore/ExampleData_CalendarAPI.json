@@ -1,0 +1,150 @@
+{
+  "result":{
+    "summary": "example schedule",
+    "items": [
+      {
+        "kind": "calendar#event",
+        "etag": "\"****************\"",
+        "id": "**************************",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar",
+        "created": "2021-06-01T06:28:11.000Z",
+        "updated": "2021-06-01T06:28:11.139Z",
+        "summary": "小組周會",
+        "creator": {
+          "email": "******@gmail.com"
+        },
+        "organizer": {
+        "email": "**************************@group.calendar.google.com",
+        "displayName": "example schedule",
+        "self": true
+       },
+        "start": {
+        "dateTime": "2021-06-11T14:30:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "end": {
+        "dateTime": "2021-06-11T15:30:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=FR"
+       ],
+        "iCalUID": "**************************@google.com",
+        "sequence": 0,
+        "reminders": {
+        "useDefault": true
+       },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"****************\"",
+        "id": "**************************",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar",
+        "created": "2021-06-01T06:24:55.000Z",
+        "updated": "2021-06-01T06:28:58.874Z",
+        "summary": "coding~~",
+        "creator": {
+        "email": "******@gmail.com"
+       },
+        "organizer": {
+        "email": "**************************@group.calendar.google.com",
+        "displayName": "example schedule",
+        "self": true
+       },
+        "start": {
+        "dateTime": "2021-06-09T10:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "end": {
+        "dateTime": "2021-06-09T18:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=WE"
+       ],
+        "transparency": "transparent",
+        "iCalUID": "**************************@google.com",
+        "sequence": 1,
+        "reminders": {
+        "useDefault": true
+       },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"****************\"",
+        "id": "**************************",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar",
+        "created": "2021-06-01T06:30:39.000Z",
+        "updated": "2021-06-01T06:31:04.187Z",
+        "summary": "上瑜珈運動課",
+        "location": "健身房",
+        "creator": {
+        "email": "******@gmail.com"
+       },
+        "organizer": {
+        "email": "**************************@group.calendar.google.com",
+        "displayName": "example schedule",
+        "self": true
+       },
+        "start": {
+        "dateTime": "2021-06-09T21:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "end": {
+        "dateTime": "2021-06-09T22:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=WE"
+       ],
+        "iCalUID": "**************************@google.com",
+        "sequence": 0,
+        "reminders": {
+        "useDefault": true
+       },
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"****************\"",
+        "id": "**************************",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar",
+        "created": "2021-06-01T06:30:39.000Z",
+        "updated": "2021-06-01T06:31:04.187Z",
+        "summary": "上有氧運動課",
+        "location": "健身房",
+        "creator": {
+        "email": "******@gmail.com"
+       },
+        "organizer": {
+        "email": "**************************@group.calendar.google.com",
+        "displayName": "example schedule",
+        "self": true
+       },
+        "start": {
+        "dateTime": "2021-06-06T15:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "end": {
+        "dateTime": "2021-06-06T16:00:00+08:00",
+        "timeZone": "Asia/Taipei"
+       },
+        "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=SU"
+       ],
+        "iCalUID": "**************************@google.com",
+        "sequence": 0,
+        "reminders": {
+        "useDefault": true
+       },
+        "eventType": "default"
+      }
+     ]
+  }
+}

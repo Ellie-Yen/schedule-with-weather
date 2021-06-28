@@ -1,0 +1,42 @@
+.card {min-width: fit-content;}
+.footer {
+  margin-top: var(--gap2);
+  filter: opacity(0.8);
+}
+
+/* for fig card */
+.fig {
+  padding: var(--fontsize_big) 0;
+  color: var(--bgcolor);
+  text-shadow: 1px 1px 2px;  
+  filter: drop-shadow(5px 5px 5px var(--fontcolor)) brightness(1.2);
+}
+.fig * {transform: scale(1.5, 1.5);}
+
+/* for horizonal card*/
+.horizon_card {grid-template-columns: 30% 70%;}
+
+/* for sliding card */
+.sliding_card {grid-template: 1fr/var(--iconradius) 1fr var(--iconradius);}
+.sliding_card_content {align-self: stretch;}
+.next_page, .prev_page{
+  position: relative;
+  background: var(--bgcolor);
+}
+.prev_page {grid-area: 1/1/1/1;}
+.next_page {right: var(--iconradius);}
+
+/* for text card */
+.text_card {cursor: pointer;}
+.text_card:before {
+  content: "\0020";
+  width: var(--gap2);
+  background: var(--maincolor3);
+}
+.text_card:hover:before {
+  background: linear-gradient(var(--maincolor2) 50%, var(--maincolor1) 50%);
+  background-size: 200% 200%;
+  -webkit-animation: 1s ease 0s 1 normal forwards running FillAnime;
+  -moz-animation: 1s ease 0s 1 normal forwards running FillAnime;
+  animation: 1s ease 0s 1 normal forwards running FillAnime;
+}
