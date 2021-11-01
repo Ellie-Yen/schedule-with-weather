@@ -1,9 +1,0 @@
-{
-  "verstion": "v1",
-  "reference": [
-    "https://opendata.cwb.gov.tw/dist/opendata-swagger.html",
-    "https://opendata.cwb.gov.tw/opendatadoc/MFC/D0047.pdf"
-  ],
-  "base_url": "https://opendata.cwb.gov.tw/api/v1/rest/datastore/",
-  "authorization_key": "rdec-key-123-45678-011121314"
-}
