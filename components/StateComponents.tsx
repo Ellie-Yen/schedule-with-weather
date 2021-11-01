@@ -121,5 +121,5 @@ function getWeatherPicUrl(args: WeatherDisplayElementProps = defaultWeatherArgs)
   if (! pics){
     pics = WEATHER_PIC_MAP["00"];
   }
-  return `/WeatherPics/${args.is_night ? pics.night: pics.day}.jpg`;
+  return `WeatherPics/${args.is_night ? pics.night: pics.day}.jpg`;
 }
