@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/schedule-with-weather/static/css/main.5eee837d.chunk.css",
-    "main.js": "/schedule-with-weather/static/js/main.038b25f2.chunk.js",
-    "main.js.map": "/schedule-with-weather/static/js/main.038b25f2.chunk.js.map",
+    "main.js": "/schedule-with-weather/static/js/main.4db28e3b.chunk.js",
+    "main.js.map": "/schedule-with-weather/static/js/main.4db28e3b.chunk.js.map",
     "runtime-main.js": "/schedule-with-weather/static/js/runtime-main.0e364df3.js",
     "runtime-main.js.map": "/schedule-with-weather/static/js/runtime-main.0e364df3.js.map",
     "static/js/2.e5186949.chunk.js": "/schedule-with-weather/static/js/2.e5186949.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0e364df3.js",
     "static/js/2.e5186949.chunk.js",
     "static/css/main.5eee837d.chunk.css",
-    "static/js/main.038b25f2.chunk.js"
+    "static/js/main.4db28e3b.chunk.js"
   ]
 }
