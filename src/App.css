@@ -1,15 +1,15 @@
 :root {
-  --maincolor1: #f6de71;
-  --maincolor2: #c4e0f5;
-  --maincolor3: #68b89a;
-  --assistcolor: rgba(168, 224, 247, 0.466);
+  --maincolor1: #9dc8e7;
+  --maincolor2: #b3e6e3;
+  --assistcolor: rgba(195, 203, 206, 0.66);
   --fontcolor: rgb(40, 40, 60);
   --bgcolor: rgb(237, 237, 255);
+  --bgcolor_trans: rgba(237, 237, 255, 0.33);
   --shadowcolor: rgba(20, 50, 30, 0.2);
 
-  --fontsize_normal: calc(8px + 1vmin);
-  --fontsize_small: calc(1px + 1vmin);
-  --fontsize_big: calc(10px + 1vmin);
+  --fontsize_normal: calc(10px + 1vmin);
+  --fontsize_small: calc(8px + 1vmin);
+  --fontsize_big: calc(12px + 1vmin);
   --iconsize: calc(20px + 1vmin);
   --iconradius: calc(10px + 0.5vmin);
   --gap1: 5px;
@@ -21,104 +21,17 @@
   text-align: left;
   background: var(--bgcolor);
   color: var(--fontcolor);
-  min-width: 320px;
+  min-width: fit-content;
 }
 
 :not(i) {
   font-size: var(--fontsize_normal);
   line-height: 1.2;
   letter-spacing: 0.05rem;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
-/*-- theme color --*/
-.primary {background: var(--maincolor1);}
-.secondary {filter: opacity(0.8);}
-
-/*-- common tags --*/
-.sf {font-size: var(--fontsize_small);}
-.bf {font-size: var(--fontsize_big);}
-.bicon {font-size: var(--iconsize);}
-
-.gd {display: grid; align-items: center;}
-
-.fx {display: flex; align-items: center;}
-.dh {flex-direction: row;}
-.dv {flex-direction: column;}
-
-.fg1 {flex-grow: 1;}
-.fg2 {flex-grow: 2;}
-
-.jsa {justify-content: space-around;} 
-.jsb {justify-content: space-between;} 
-.jse {justify-content: space-evenly;} 
-.jsc {justify-content: center;} 
-.jst {justify-content: stretch;}
-
-.acc {align-content: center;}
-
-.aii {align-items: stretch;}
-.ais {align-items: flex-start;}
-
-.g5 {gap: var(--gap1); grid-gap: var(--gap1);}
-.g10 {gap: var(--gap2); grid-gap: var(--gap2);}
-.g50 {gap: var(--gap3); grid-gap: var(--gap3);}
-
-.ma {margin: auto;}
-.p5 {padding: var(--gap1);}
-.p10 {padding: var(--gap2);}
-
-.circle {border-radius: 100%;}
-.rd {
-  border-radius: var(--gap2);
-  padding: var(--gap2);
-}
-.rd_small {
-  border-radius: var(--gap1);
-  padding: var(--gap1);
-}
-.rd_big {
-  border-radius: var(--iconradius);
-  padding: var(--iconradius);
-}
-.circle_side {
-  border-radius: var(--iconsize);
-  height: var(--iconsize);
-  padding: 0 var(--iconradius);
-}
-
-.shadow {box-shadow: 0px 0px var(--gap3) 1px var(--shadowcolor);}
-.shadow:hover {box-shadow: var(--gap2) var(--gap2) var(--gap3) 5px var(--shadowcolor);}
-.shadow_small {box-shadow: 0px 0px var(--gap2) 1px var(--shadowcolor);}
-
-.pa {position: absolute;}
-.pf {position: fixed;}
-.z1 {z-index: 1;}
-
-.oyh {overflow-y: hidden;}
-.oxh {overflow-x: hidden;}
-
-.w100 {width: 100%;}
-.w50 {width: 50%; }
-
-.fiw {width: -webkit-fill-available;}
-.fih {height: -webkit-fill-available;}
-
-@-webkit-keyframes FillAnime {
-  0%{background-position-y:0%}
-  50%{background-position-y:50%}
-  100%{background-position-y:100%}
-}
-@-moz-keyframes FillAnime {
-  0%{background-position-y:0%}
-  50%{background-position-y:50%}
-  100%{background-position-y:100%}
-}
-@keyframes FillAnime {
-  0%{background-position-y:0%}
-  50%{background-position-y:50%}
-  100%{background-position-y:100%}
-}
+small {font-size: var(--fontsize_small);}
+h1 {font-size: var(--fontsize_big);}
 
 /*-- app part --*/
 #app-main {
@@ -131,6 +44,14 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  gap: var(--gap3);
+}
+#app-setting {
+  position: fixed;
+  z-index: 1;
+}
+#app-schedule {
+  padding: var(--gap3);
 }
 #app-weather {
   justify-content: center;
@@ -138,10 +59,21 @@
   padding: var(--gap3);
 }
 #weather_week, #weather_3day {
-  max-height: 300px;
+  max-height: 400px;
   min-height: fit-content;
+  width: fit-content;
+  min-width: 250px;
 }
-#weather_3day {width: fit-content;}
+#weather_3day_pic {
+  position: fixed;
+  top: 0px;
+  left: 15vw;
+}
+#weather_3day_pic * {
+  width: 33vw;
+  height: 75vh;
+}
+
 @media (min-width: 700px) {
   #app-weather {
     position: sticky;
@@ -158,42 +90,72 @@
   #app-weather, #weather_week, #weather_3day {
     width: initial;
   }
-}
-#weather_3day_figcard {background: var(--bgcolor);}
-#weather_week:after {
-  content: "\0020";
-  background: url(".\\bg_pics\\a17ddecbd1e0f4d35e844b46.jpg") #b0bed3;
-  position: absolute;
-  right: 0%;
-  top: 0px;
-  width: 66%;
-  height: 66%;
-  z-index: -1;
-  box-shadow: var(--gap2) var(--gap2) var(--gap3) 10px var(--shadowcolor);
-}
-.schedule_day_item {
-  background: url(".\\bg_pics\\1964948875_edit.jpg") #e8e1b5 repeat fixed;
-}
-.event_item:hover {
-  backdrop-filter: blur( 10px ) brightness(1.2);
-  -webkit-backdrop-filter: blur( 10px );
+  #weather_3day_pic {
+    position: fixed;
+    top: 12.5vh;
+    left: 12.5vw;
+  }
+  #weather_3day_pic * {
+    width: 75vw;
+    height: 75vh;
+  }
 }
 
-.setting > .btn,
-.refresh,
-.location_setting > *,
-.calendar_setting > * {
-   width: fit-content; 
+
+/*-- gradient anime code genterate by https://www.gradient-animator.com/ --*/
+@-webkit-keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
 }
-.setting > .btn {
-  transform: translate(-5%, -5%);
-  filter: drop-shadow(2px 2px 2px var(--shadowcolor));
-  padding: 0;
-  background: var(--maincolor1);
+@-moz-keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
 }
-.setting > .btn:hover {
-  background: var(--maincolor2);
-  transform: scale(1.5);
+@keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
 }
-/* fix the uneven width of icons in setting*/
-.setting i {width: var(--fontsize_normal); text-align: center;}
+
+@-webkit-keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
+@-moz-keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
+@keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
