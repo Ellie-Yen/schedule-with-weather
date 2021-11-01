@@ -1,6 +1,7 @@
 {
   "name": "schedule_with_weather",
-  "version": "0.1.0",
+  "homepage": "https://ellie-yen.github.io/schedule-with-weather/",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
