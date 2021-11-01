@@ -1,0 +1,161 @@
+:root {
+  --maincolor1: #9dc8e7;
+  --maincolor2: #b3e6e3;
+  --assistcolor: rgba(195, 203, 206, 0.66);
+  --fontcolor: rgb(40, 40, 60);
+  --bgcolor: rgb(237, 237, 255);
+  --bgcolor_trans: rgba(237, 237, 255, 0.33);
+  --shadowcolor: rgba(20, 50, 30, 0.2);
+
+  --fontsize_normal: calc(10px + 1vmin);
+  --fontsize_small: calc(8px + 1vmin);
+  --fontsize_big: calc(12px + 1vmin);
+  --iconsize: calc(20px + 1vmin);
+  --iconradius: calc(10px + 0.5vmin);
+  --gap1: 5px;
+  --gap2: 10px;
+  --gap3: 25px;
+}
+
+.App {
+  text-align: left;
+  background: var(--bgcolor);
+  color: var(--fontcolor);
+  min-width: fit-content;
+}
+
+:not(i) {
+  font-size: var(--fontsize_normal);
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+small {font-size: var(--fontsize_small);}
+h1 {font-size: var(--fontsize_big);}
+
+/*-- app part --*/
+#app-main {
+  display: grid;
+  grid-auto-flow: column dense;
+  gap: var(--gap3);
+  margin: auto;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--gap3);
+}
+#app-setting {
+  position: fixed;
+  z-index: 1;
+}
+#app-schedule {
+  padding: var(--gap3);
+}
+#app-weather {
+  justify-content: center;
+  gap: var(--gap3);
+  padding: var(--gap3);
+}
+#weather_week, #weather_3day {
+  max-height: 400px;
+  min-height: fit-content;
+  width: fit-content;
+  min-width: 250px;
+}
+#weather_3day_pic {
+  position: fixed;
+  top: 0px;
+  left: 15vw;
+}
+#weather_3day_pic * {
+  width: 33vw;
+  height: 75vh;
+}
+
+@media (min-width: 700px) {
+  #app-weather {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 700px) {
+  @media (min-width: 620px) {
+    #app-weather {flex-flow: row;}    
+  }
+  #app-main {grid-auto-flow: row;}
+  #app-weather, #weather_week, #weather_3day {
+    width: initial;
+  }
+  #weather_3day_pic {
+    position: fixed;
+    top: 12.5vh;
+    left: 12.5vw;
+  }
+  #weather_3day_pic * {
+    width: 75vw;
+    height: 75vh;
+  }
+}
+
+
+/*-- gradient anime code genterate by https://www.gradient-animator.com/ --*/
+@-webkit-keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
+}
+@-moz-keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
+}
+@keyframes GradientAnime {
+  0%{background-position:28% 0%}
+  50%{background-position:73% 100%}
+  100%{background-position:28% 0%}
+}
+
+@-webkit-keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes RotatingAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
+@-moz-keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
+@keyframes FillAnime {
+  0%{background-position-y:0%}
+  50%{background-position-y:50%}
+  100%{background-position-y:100%}
+}
