@@ -1,0 +1,79 @@
+{
+  "summary": "example schedule",
+  "event_list": [
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "小組周會",
+        "location": "尚未設定",
+        "duration": "t 11:00 ~ t 12:00"
+      },
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "運動~~",
+        "location": "健身房",
+        "duration": "t 15:00 ~ t 18:00"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "讀英文",
+        "location": "圖書館",
+        "duration": "t 11:00 ~ t 12:00"
+      },
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "運動~~",
+        "location": "健身房",
+        "duration": "t 15:00 ~ t 18:00"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "美食會展",
+        "location": "南港世貿",
+        "duration": "t 08:00 ~ t 18:00"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "無行程，至Google日曆新增",
+        "location": "-",
+        "duration": "-"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "小美生日",
+        "location": "尚未設定",
+        "duration": "t 00:00 ~ t 23:59"
+      },
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "讀英文",
+        "location": "圖書館",
+        "duration": "t 15:00 ~ t 05:00"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "運動~~",
+        "location": "健身房",
+        "duration": "t 15:00 ~ t 18:00"
+      }
+    ],
+    [
+      {
+        "link": "https://www.google.com/calendar",
+        "summary": "無行程，至Google日曆新增",
+        "location": "-",
+        "duration": "-"
+      }
+    ]
+  ]
+}
