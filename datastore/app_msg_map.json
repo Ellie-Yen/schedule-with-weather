@@ -1,8 +1,0 @@
-{
-  "loading": "資料抓取中",
-  "failed": "下載錯誤",
-  "unknown_failed": "未知錯誤",
-  "init_weather": "請先設置天氣地點",
-  "init_schedule": "請先設置Google日曆",
-  "empty_schedule": "無行程，點此至Google日曆新增"
-}
