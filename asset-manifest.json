@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/schedule-with-weather/static/css/main.5eee837d.chunk.css",
+    "main.js": "/schedule-with-weather/static/js/main.fce1bfd3.chunk.js",
+    "main.js.map": "/schedule-with-weather/static/js/main.fce1bfd3.chunk.js.map",
+    "runtime-main.js": "/schedule-with-weather/static/js/runtime-main.0e364df3.js",
+    "runtime-main.js.map": "/schedule-with-weather/static/js/runtime-main.0e364df3.js.map",
+    "static/js/2.e5186949.chunk.js": "/schedule-with-weather/static/js/2.e5186949.chunk.js",
+    "static/js/2.e5186949.chunk.js.map": "/schedule-with-weather/static/js/2.e5186949.chunk.js.map",
+    "static/js/3.76908578.chunk.js": "/schedule-with-weather/static/js/3.76908578.chunk.js",
+    "static/js/3.76908578.chunk.js.map": "/schedule-with-weather/static/js/3.76908578.chunk.js.map",
+    "index.html": "/schedule-with-weather/index.html",
+    "static/css/main.5eee837d.chunk.css.map": "/schedule-with-weather/static/css/main.5eee837d.chunk.css.map",
+    "static/js/2.e5186949.chunk.js.LICENSE.txt": "/schedule-with-weather/static/js/2.e5186949.chunk.js.LICENSE.txt",
+    "static/media/weather-icons.min.css": "/schedule-with-weather/static/media/weathericons-regular-webfont.e218aee6.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e364df3.js",
+    "static/js/2.e5186949.chunk.js",
+    "static/css/main.5eee837d.chunk.css",
+    "static/js/main.fce1bfd3.chunk.js"
+  ]
+}
