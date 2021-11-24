@@ -41,14 +41,17 @@ function getDateInWeatherAPI(api_time_obj: string): Date {
  * range n is from 0 ~ 6 (relative position in the week). 
  */
 function getWeekListIdx(date_obj: Date, current_week_date_list: Array<Date>): number{
-  let day_diff = date_obj.getDate() - current_week_date_list[0].getDate();
-  if (day_diff < 0){
-    day_diff += 7; 
+  // the result of getDay() will be different by hours thus leads to error.
+  // in order to fix that, use the difference of date time.
+  const d = date_obj.getDate();
+  const toStart =  d - current_week_date_list[0].getDate();
+  const toEnd = current_week_date_list[6].getDate() - d;
+
+  // handling situation of that start and end are in differenet months.
+  if (Math.abs(toStart) > Math.abs(toEnd)){
+    return 6 - toEnd;
   }
-  else if (day_diff > 6){
-    day_diff = 6;
-  }
-  return day_diff;
+  return toStart;
 }
 
 function getCurrentWeekDateList(): Array<Date>{
