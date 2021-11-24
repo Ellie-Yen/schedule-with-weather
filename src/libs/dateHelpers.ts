@@ -41,7 +41,7 @@ function getDateInWeatherAPI(api_time_obj: string): Date {
  * range n is from 0 ~ 6 (relative position in the week). 
  */
 function getWeekListIdx(date_obj: Date, current_week_date_list: Array<Date>): number{
-  let day_diff = date_obj.getUTCDay() - current_week_date_list[0].getUTCDay();
+  let day_diff = date_obj.getDate() - current_week_date_list[0].getDate();
   if (day_diff < 0){
     day_diff += 7; 
   }
