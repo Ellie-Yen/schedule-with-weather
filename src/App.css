@@ -54,7 +54,7 @@ h1 {font-size: var(--fontsize_big);}
   padding: var(--gap3);
 }
 #app-weather {
-  justify-content: center;
+  justify-content: start;
   gap: var(--gap3);
   padding: var(--gap3);
 }
